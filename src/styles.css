@@ -7,6 +7,11 @@ body {
   margin: 0 auto;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -35,6 +40,10 @@ body {
 .card-footer {
   padding: 0 30px 30px;
 }
+
+.card-header.grid {
+  grid-gap: 0;
+}
 .btn {
   display: block;
   color: black;
@@ -45,12 +54,13 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   padding: 16px;
-  background-color: #FFFFF0;
+  background-color: #fffff0;
   text-decoration: none;
 }
 
 .image-responsive {
-  max-width: 100%;
+  width: 100%;
+  display: block;
 }
 
 main {
@@ -201,4 +211,10 @@ footer p {
   section {
     padding: 30px;
   }
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
 }
